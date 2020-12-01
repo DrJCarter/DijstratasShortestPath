@@ -85,7 +85,7 @@ Module Module1
         Dim edges() As String
         Dim edge_weights As New Dictionary(Of String, Integer)
         Dim text() As String
-        Using sr As StreamReader = New StreamReader("WeightedAdjacencyList.txt")
+        Using sr As StreamReader = New StreamReader("SouthAmerica.txt")
             myline = sr.ReadLine()
             Do While myline <> Nothing
                 vertexname = myline.Split(":")
@@ -106,7 +106,7 @@ Module Module1
         Console.WriteLine("These are all the places we can visit")
         ListVertices(graph)
 
-        Console.Write("Where shall we start from? ")
+        Console.Write("Which Vertex shall we start from? ")
         Dim StartAt As String = Console.ReadLine()
         Console.Write("Where are we going? ")
         Dim StopAt As String = Console.ReadLine()
