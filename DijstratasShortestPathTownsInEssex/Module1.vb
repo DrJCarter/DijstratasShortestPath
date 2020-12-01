@@ -108,7 +108,7 @@ Module Module1
 
         Console.Write("Which Vertex shall we start from? ")
         Dim StartAt As String = Console.ReadLine()
-        Console.Write("Where are we going? ")
+        Console.Write("Which Vertex are we going to? ")
         Dim StopAt As String = Console.ReadLine()
         Dim shortest_path = dijkstra(graph, StartAt, StopAt)
         Console.WriteLine()
